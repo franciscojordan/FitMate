@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">FitMate</string>
     <string name="fitmate">FITMATE</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="hecho">HECHO</string>
+    <string name="iniciarsesion">Iniciar Sesión</string>
+    <string name="guest">Ingresar como invitado</string>
 </resources>

@@ -6,6 +6,45 @@
     android:layout_height="match_parent"
     android:background="@color/regularGreen">
 
+    <ImageView
+        android:id="@+id/top_half_circle"
+        android:layout_width="match_parent"
+        android:layout_height="239dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/half_circle_top" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="210dp"
+        android:layout_height="197dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="100dp"
+        app:srcCompat="@mipmap/fitmate_logo_foreground" />
+
+    <ImageView
+        android:id="@+id/bot_half_circle"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/half_circle_bot" />
+
+    <TextView
+        android:id="@+id/fitmate_title"
+        style="@style/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="FITMATE" />
+
     <LinearLayout
         android:id="@+id/box"
         android:layout_width="match_parent"
@@ -52,65 +91,16 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/invitado"
-            style="@style/clickable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-35dp"
-            android:layout_marginBottom="50dp"
-            android:clickable="true"
-            android:text="@string/guest" />
-
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="75dp"
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
             android:layout_height="82dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="-80dp"
+            android:layout_marginLeft="-130dp"
+            android:layout_marginTop="-60dp"
             android:src="@tools:sample/avatars"
-            app:srcCompat="@mipmap/next_foreground" />
+            app:srcCompat="@mipmap/back" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/top_half_circle"
-        android:layout_width="match_parent"
-        android:layout_height="239dp"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/half_circle_top" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="210dp"
-        android:layout_height="197dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="100dp"
-        app:srcCompat="@mipmap/fitmate_logo_foreground" />
-
-    <ImageView
-        android:id="@+id/bot_half_circle"
-        android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_alignParentBottom="true"
-        app:srcCompat="@drawable/half_circle_bot" />
-
-    <TextView
-        android:id="@+id/fitmate_title"
-        style="@style/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="FITMATE" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/done"
@@ -140,15 +130,15 @@
         app:srcCompat="@drawable/top_clipboard" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Registro"
         style="@style/main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/top_box2"
         android:layout_alignParentEnd="false"
-        android:layout_marginLeft="143dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginBottom="-115dp"
-        android:text="@string/iniciarsesion" />
+        android:text="@string/registrarse" />
 
 
 </RelativeLayout>
