@@ -5,4 +5,9 @@
     <string name="hecho">HECHO</string>
     <string name="iniciarsesion">Iniciar Sesión</string>
     <string name="guest">Ingresar como invitado</string>
+    <string name="edad">Edad</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="genero">Género</string>
+    <string name="actividad">Nivel de actividad</string>
 </resources>

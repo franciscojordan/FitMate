@@ -47,7 +47,7 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">18dp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
-    </style
+    </style>
     <!--Style used for clickable text-->
     <style name="clickable" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/gray</item>
