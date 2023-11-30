@@ -78,7 +78,8 @@
         android:layout_width="match_parent"
         android:layout_height="239dp"
         android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/half_circle_top" />
+        app:srcCompat="@drawable/top_halfcircle"
+        app:tint="@color/darkGreen"/>
 
     <ImageView
         android:id="@+id/imageView"
