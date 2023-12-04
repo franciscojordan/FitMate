@@ -16,4 +16,9 @@
     <string name="ejercicios">Ejercicios</string>
     <string name="verMas">Ver más</string>
     <string name="recetas">Recetas</string>
+    <string name="edad">Edad</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="genero">Género</string>
+    <string name="actividad">Nivel de actividad</string>
 </resources>
