@@ -31,8 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/done3"
-        app:layout_constraintTop_toBottomOf="@+id/top_half_circle4">
+        app:layout_constraintBottom_toTopOf="@+id/done3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.5">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/edad"
@@ -106,7 +107,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:background="@color/white"
-            android:hint="actividad">
+            android:hint="@string/actividad">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"

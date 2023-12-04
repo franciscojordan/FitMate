@@ -1,63 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--Style used for the logo FITMATE-->
-    <style name="logo" parent="TextAppearance.AppCompat">
+    <!--Style used for the green FITMATE logo-->
+    <style name="greenLogo" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/slightlyDarkerGreen</item>
-        <item name="android:textSize">40dp</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:fontFamily">@font/bakbakone_regular</item>
+    </style>
+    <!--Style used for the white FITMATE logo-->
+    <style name="whiteLogo" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">40sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for the main titles-->
     <style name="title" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/bakbakone_regular</item>
+    </style>
+    <!--Style used for the smaller titles-->
+    <style name="smallerTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">23sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for the subtitles-->
     <style name="subtitle" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for the paragraphs-->
     <style name="paragraph" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">13dp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for the buttons to see more content-->
     <style name="more" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/darkGreen</item>
-        <item name="android:textSize">13dp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for the smaller texts-->
     <style name="small" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/gray</item>
-        <item name="android:textSize">11dp</item>
+        <item name="android:textSize">11sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for numeric counters-->
     <style name="numbercount" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/gray</item>
-        <item name="android:textSize">19dp</item>
+        <item name="android:textSize">19sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for the "Done" buttons-->
     <style name="done" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for clickable text-->
     <style name="clickable" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/gray</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
     <!--Style used for log-in & sign-in titles-->
     <style name="main" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/slightlyDarkerGreen</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
 
