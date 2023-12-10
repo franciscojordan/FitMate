@@ -5,6 +5,17 @@
     <string name="hecho">HECHO</string>
     <string name="iniciarsesion">Iniciar Sesión</string>
     <string name="guest">Ingresar como invitado</string>
+    <string name="email">2023_francisco.jordan@iticbcn.cat</string>
+    <string name="username">Franjoga</string>
+    <string name="pasosInt">0</string>
+    <string name="pasosString">Pasos\ntotales</string>
+    <string name="distanciaInt">0</string>
+    <string name="distanciaString">Distancia\nrecorrida</string>
+    <string name="tiempoInt">0</string>
+    <string name="tiempoString">Tiempo\ntotal</string>
+    <string name="ejercicios">Ejercicios</string>
+    <string name="verMas">Ver más</string>
+    <string name="recetas">Recetas</string>
     <string name="edad">Edad</string>
     <string name="altura">Altura</string>
     <string name="peso">Peso</string>
