@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/pfp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/username"
         style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,14 +43,14 @@
         app:layout_constraintVertical_bias="0.7" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/email"
         style="@style/small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
         app:layout_constraintBottom_toBottomOf="@+id/top_half_circle2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <ImageView
@@ -60,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.060000002"
         app:srcCompat="@drawable/contadores" />
 
@@ -148,10 +148,10 @@
         android:id="@+id/configButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/username"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.38"
         android:background="@drawable/settings" />

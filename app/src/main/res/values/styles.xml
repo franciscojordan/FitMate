@@ -72,5 +72,10 @@
         <item name="android:textSize">20sp</item>
         <item name="android:fontFamily">@font/bakbakone_regular</item>
     </style>
+    <!--Style used for log-in & sign-in titles-->
+    <style name="WhiteProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/white_progress_bar</item>
+        <item name="android:indeterminateDrawable">@drawable/white_progress_bar</item>
+    </style>
 
 </resources>

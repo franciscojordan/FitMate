@@ -16,5 +16,4 @@ class EjerciciosScreen : AppCompatActivity() {
             NavigationUtils.launchHome(this)
         }
     }
-
 }

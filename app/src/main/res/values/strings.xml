@@ -7,6 +7,8 @@
     <string name="guest">Ingresar como invitado</string>
     <string name="email">2023_francisco.jordan@iticbcn.cat</string>
     <string name="username">Franjoga</string>
+    <string name="emailInvitado">Has iniciado sesión como invitado</string>
+    <string name="usernameInvitado">Invitado</string>
     <string name="pasosInt">0</string>
     <string name="pasosString">Pasos\ntotales</string>
     <string name="distanciaInt">0</string>
@@ -22,4 +24,5 @@
     <string name="genero">Género</string>
     <string name="actividad">Nivel de actividad</string>
     <string name="historialescaneos">Historial de escaneos</string>
+
 </resources>
