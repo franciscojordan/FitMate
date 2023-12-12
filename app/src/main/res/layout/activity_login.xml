@@ -62,14 +62,13 @@
             android:clickable="true"
             android:text="@string/guest" />
 
-        <ImageView
-            android:id="@+id/imageView2"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/swapRegisterButton"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="-80dp"
-            android:src="@tools:sample/avatars"
-            app:srcCompat="@mipmap/next_foreground" />
+            android:background="@mipmap/next_foreground" />
 
     </LinearLayout>
 

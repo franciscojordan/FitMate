@@ -19,7 +19,6 @@
         android:id="@+id/imageView8"
         android:layout_width="89dp"
         android:layout_height="85dp"
-        android:src="@tools:sample/avatars"
         app:layout_constraintBottom_toBottomOf="@+id/top_half_circle4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +116,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/done3"
+        android:id="@+id/done"
         android:layout_width="325dp"
         android:layout_height="50dp"
         android:height="75dp"
@@ -138,41 +137,39 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="center_vertical"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20sp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/bot_half_circle2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/done3">
+        app:layout_constraintTop_toTopOf="@+id/bot_half_circle2">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:src="@tools:sample/avatars"
-            app:srcCompat="@drawable/escaneo_gris" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scannerButton"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/escaneo_logo"
+            android:backgroundTint="@color/gray"/>
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="70dp"
-            android:layout_height="65dp"
-            android:layout_weight="0"
-            android:src="@tools:sample/avatars"
-            app:srcCompat="@drawable/calculadora_logo" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calculadoraButton"
+            android:layout_width="75sp"
+            android:layout_height="65sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginEnd="40sp"
+            android:background="@drawable/calculadora_logo"
+            android:backgroundTint="@color/darkGreen"/>
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_weight="1"
-            android:src="@tools:sample/avatars"
-            app:srcCompat="@drawable/casa_gris" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/homeButton"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/casa_logo"
+            android:backgroundTint="@color/gray"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

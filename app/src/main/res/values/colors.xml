@@ -8,4 +8,5 @@
     <color name="darkGreen">#29925F</color>
     <color name="regularGreen">#00BF63</color>
     <color name="brightGreen">#DFFFF0</color>
+    <color name="transparent">#00000000</color>
 </resources>
