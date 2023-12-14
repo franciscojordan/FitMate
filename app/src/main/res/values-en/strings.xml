@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FitMate</string>
+    <string name="fitmate">FITMATE</string>
+    <string name="registrarse">Sign-in</string>
+    <string name="hecho">DONE</string>
+    <string name="iniciarsesion">Log-in</string>
+    <string name="guest">Log-in as guest</string>
+    <string name="email">2023_francisco.jordan@iticbcn.cat</string>
+    <string name="username">Franjoga</string>
+    <string name="emailInvitado">You\'re logged in as guest</string>
+    <string name="usernameInvitado">Guest</string>
+    <string name="pasosInt">0</string>
+    <string name="pasosString">Total\nSteps</string>
+    <string name="distanciaInt">0</string>
+    <string name="distanciaString">Traveled\nDistance</string>
+    <string name="tiempoInt">0</string>
+    <string name="tiempoString">Total\nTime</string>
+    <string name="ejercicios">Exercises</string>
+    <string name="verMas">See more</string>
+    <string name="recetas">Recipes</string>
+    <string name="edad">Age</string>
+    <string name="altura">Height</string>
+    <string name="peso">Weight</string>
+    <string name="genero">Gender</string>
+    <string name="actividad">Activity level</string>
+    <string name="historialescaneos">Scanning history</string>
+</resources>
