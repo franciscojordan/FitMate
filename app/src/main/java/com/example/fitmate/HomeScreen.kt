@@ -3,7 +3,7 @@ package com.example.fitmate
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.fitmate.databinding.ActivityHomeScreenBinding
-
+import com.example.fitmate.utils.NavigationUtils
 
 
 class HomeScreen : AppCompatActivity() {
@@ -11,11 +11,10 @@ class HomeScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
         // Recupera el valor del intent
-        val isGuest = intent.getBooleanExtra("IS_GUEST", false)
+        val isGuest = intent.getBooleanExtra("IS_GUEST", true)
 
         if (isGuest) {
             setGuestUserValues()
@@ -24,7 +23,7 @@ class HomeScreen : AppCompatActivity() {
         }
 
         binding.calcButton.setOnClickListener{
-            NavigationUtils.launchCalculator(this)
+            NavigationUtils.launchCalculator(this, null)
         }
 
         binding.scannerButton.setOnClickListener{

@@ -3,6 +3,7 @@ package com.example.fitmate
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitmate.databinding.ActivityScanningBinding
+import com.example.fitmate.utils.NavigationUtils
 
 
 class ScanningScreen : AppCompatActivity() {
@@ -10,20 +11,19 @@ class ScanningScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityScanningBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
         binding.dropScannedButton.setOnClickListener{
-            NavigationUtils.launchScanned(this)
+            NavigationUtils.launchScanned(this, null)
         }
         binding.calculadoraButton.setOnClickListener{
-            NavigationUtils.launchCalculator(this)
+            NavigationUtils.launchCalculator(this, null)
         }
         binding.homeButton.setOnClickListener{
-            NavigationUtils.launchHome(this)
+            NavigationUtils.launchHome(this, null)
         }
         binding.scannerButton.setOnClickListener{
-            NavigationUtils.launchScanner(this)
+            NavigationUtils.launchScanner(this, null)
         }
     }
 }

@@ -137,7 +137,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/top_box2"
+        android:layout_alignStart="@+id/top_box2"
         android:layout_alignParentEnd="false"
+        android:layout_marginStart="50dp"
         android:layout_marginLeft="150dp"
         android:layout_marginBottom="-115dp"
         android:text="@string/registrarse" />

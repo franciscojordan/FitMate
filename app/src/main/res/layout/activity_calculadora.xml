@@ -4,172 +4,166 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brightGreen">
+    android:background="@color/brightGreen"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/top_half_circle4"
-        android:layout_width="413dp"
-        android:layout_height="237dp"
-        android:layout_alignParentTop="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/top_halfcircle"
-        tools:layout_editor_absoluteY="-112dp" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/top_halfcircle" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="89dp"
         android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_macros"
         app:layout_constraintBottom_toBottomOf="@+id/top_half_circle4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_macros" />
+        app:layout_constraintEnd_toEndOf="@+id/top_half_circle4"
+        app:layout_constraintStart_toStartOf="@+id/top_half_circle4"
+        app:layout_constraintTop_toTopOf="@+id/top_half_circle4" />
 
-    <LinearLayout
-        android:id="@+id/form"
+    <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/done3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.5">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/done"
+        app:layout_constraintTop_toBottomOf="@+id/top_half_circle4">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edad"
+        <LinearLayout
+            android:id="@+id/form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:hint="@string/edad">
+            android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edad"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="@string/edad">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/altura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:hint="@string/altura">
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/altura"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="@string/altura">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/peso"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:hint="@string/peso">
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/peso"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="@string/peso">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/genero"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:hint="@string/genero">
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/genero"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="@string/genero">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/actividad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/white"
-            android:hint="@string/actividad">
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/actividad"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="@string/actividad">
 
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/done"
         android:layout_width="325dp"
         android:layout_height="50dp"
-        android:height="75dp"
         android:background="@drawable/rounded_button_background"
         android:text="@string/hecho"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/bot_half_circle2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
+    <LinearLayout
         android:id="@+id/bot_half_circle2"
         android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_alignParentBottom="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/half_circle_bot" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0sp"
-        android:layout_height="0sp"
+        android:layout_height="0dp"
+        android:background="@drawable/half_circle_bot"
         android:gravity="center_horizontal"
-        android:layout_marginTop="20sp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/bot_half_circle2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/bot_half_circle2">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/scannerButton"
             android:layout_width="40sp"
             android:layout_height="40sp"
-            android:layout_marginTop="15sp"
+            android:layout_marginTop="25sp"
             android:background="@drawable/escaneo_logo"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/gray" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/calculadoraButton"
             android:layout_width="75sp"
             android:layout_height="65sp"
             android:layout_marginStart="50sp"
+            android:layout_marginTop="15sp"
             android:layout_marginEnd="40sp"
             android:background="@drawable/calculadora_logo"
-            android:backgroundTint="@color/darkGreen"/>
+            android:backgroundTint="@color/darkGreen" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/homeButton"
             android:layout_width="50sp"
             android:layout_height="40sp"
-            android:layout_marginTop="15sp"
+            android:layout_marginTop="25sp"
             android:background="@drawable/casa_logo"
-            android:backgroundTint="@color/gray"/>
+            android:backgroundTint="@color/gray" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

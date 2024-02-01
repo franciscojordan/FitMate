@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">FitMate</string>
     <string name="fitmate">FITMATE</string>
-    <string name="registrarse">Registrarse
-    <string name="edad">Edad</string></string>
+    <string name="registrarse">Registrarse</string>
+    <string name="edad">Edad</string>
     <string name="hecho">HECHO</string>
     <string name="iniciarsesion">Iniciar Sesión</string>
     <string name="guest">Ingresar como invitado</string>
@@ -19,7 +19,6 @@
     <string name="ejercicios">Ejercicios</string>
     <string name="verMas">Ver más</string>
     <string name="recetas">Recetas</string>
-    <string name="edad">Edad</string>
     <string name="altura">Altura</string>
     <string name="peso">Peso</string>
     <string name="genero">Género</string>

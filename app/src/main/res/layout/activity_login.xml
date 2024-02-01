@@ -63,23 +63,19 @@
             android:text="@string/guest"
             android:focusable="true" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/swapRegisterButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="-80dp"
-            android:background="@mipmap/next_foreground" />
-
     </LinearLayout>
 
     <ImageView
         android:id="@+id/top_half_circle"
         android:layout_width="match_parent"
         android:layout_height="239dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         app:srcCompat="@drawable/top_halfcircle"
-        app:tint="@color/darkGreen"/>
+        app:tint="@color/darkGreen" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -146,8 +142,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/top_box2"
-        android:layout_alignParentEnd="false"
-        android:layout_marginLeft="143dp"
+        android:layout_below="@+id/top_half_circle"
+        android:layout_alignStart="@+id/top_box2"
+        android:layout_alignEnd="@+id/top_box2"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
         android:layout_marginBottom="-115dp"
         android:text="@string/iniciarsesion" />
 

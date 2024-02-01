@@ -1,33 +1,31 @@
 package com.example.fitmate
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitmate.databinding.ActivityCalculadoraBinding
+import com.example.fitmate.utils.NavigationUtils
 
 class CalculadoraScreen : AppCompatActivity() {
     private lateinit var binding: ActivityCalculadoraBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCalculadoraBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
         binding.done.setOnClickListener{
-            NavigationUtils.launchResultadoCalculadora(this)
+            NavigationUtils.launchResultadoCalculadora(this, null)
         }
 
         binding.scannerButton.setOnClickListener{
-            NavigationUtils.launchScanner(this)
+            NavigationUtils.launchScanner(this, null)
         }
 
         binding.homeButton.setOnClickListener{
-            NavigationUtils.launchHome(this)
+            NavigationUtils.launchHome(this, null)
         }
 
         binding.calculadoraButton.setOnClickListener{
-            NavigationUtils.launchCalculator(this)
+            NavigationUtils.launchCalculator(this, null)
         }
     }
 }
