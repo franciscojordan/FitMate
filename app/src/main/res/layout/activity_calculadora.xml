@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brightGreen"
-    android:orientation="vertical">
+    android:background="@color/brightGreen">
 
     <ImageView
         android:id="@+id/top_half_circle4"
@@ -13,7 +12,8 @@
         android:layout_height="0dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:src="@drawable/top_halfcircle" />
+        android:src="@drawable/top_halfcircle"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -29,14 +29,16 @@
     <ScrollView
         android:id="@+id/scrollView4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/done"
-        app:layout_constraintTop_toBottomOf="@+id/top_half_circle4">
+        android:layout_height="400sp"
+        app:layout_constraintBottom_toBottomOf="@+id/done"
+        app:layout_constraintTop_toBottomOf="@+id/top_half_circle4"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
             android:id="@+id/form"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -128,6 +130,7 @@
         android:background="@drawable/rounded_button_background"
         android:text="@string/hecho"
         android:textColor="@color/white"
+        android:layout_marginBottom="15sp"
         app:layout_constraintBottom_toTopOf="@+id/bot_half_circle2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
