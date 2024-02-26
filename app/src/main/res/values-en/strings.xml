@@ -2,6 +2,9 @@
     <string name="app_name">FitMate</string>
     <string name="fitmate">FITMATE</string>
     <string name="registrarse">Sign-in</string>
+    <string name="edad">Age</string>
+    <string name="contrasenya">Password</string>
+    <string name="nombre">Name</string>
     <string name="hecho">DONE</string>
     <string name="iniciarsesion">Log-in</string>
     <string name="guest">Log-in as guest</string>
@@ -18,7 +21,6 @@
     <string name="ejercicios">Exercises</string>
     <string name="verMas">See more</string>
     <string name="recetas">Recipes</string>
-    <string name="edad">Age</string>
     <string name="altura">Height</string>
     <string name="peso">Weight</string>
     <string name="genero">Gender</string>

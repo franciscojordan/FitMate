@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitmate.databinding.ActivityRegisterBinding
 import com.example.fitmate.utils.NavigationUtils
+import com.example.fitmate.utils.ToolbarUtil
 
 class RegisterScreen : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -11,10 +12,6 @@ class RegisterScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.swapLoginButton.setOnClickListener{
-            NavigationUtils.goBack(this)
-        }
 
         binding.done.setOnClickListener{
             NavigationUtils.launchHome(this, null)

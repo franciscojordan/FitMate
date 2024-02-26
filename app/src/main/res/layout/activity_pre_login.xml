@@ -3,68 +3,67 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/regularGreen">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/regularGreen"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/register"
-            style="@style/more"
-            android:layout_width="120sp"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
             android:layout_above="@+id/bot_half_circle"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="140dp"
-            android:layout_marginEnd="140dp"
-            android:layout_marginBottom="145dp"
-            android:background="@drawable/small_button"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
-            android:text="@string/registrarse" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/login"
-            style="@style/more"
-            android:layout_width="120sp"
-            android:layout_height="wrap_content"
             android:layout_below="@+id/top_half_circle"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="153dp"
-            android:layout_marginEnd="140dp"
-            android:background="@drawable/small_button"
-            android:scaleX="1.5"
-            android:scaleY="1.5"
-            android:text="@string/iniciarsesion" />
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register"
+                style="@style/more"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/small_button"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:text="@string/registrarse"
+                android:layout_margin="25dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                style="@style/more"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/small_button"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:text="@string/iniciarsesion"
+                android:layout_margin="25dp"/>
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/top_half_circle"
             android:layout_width="match_parent"
-            android:layout_height="239dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             android:layout_alignParentTop="true"
             app:srcCompat="@drawable/top_halfcircle"
             app:tint="@color/darkGreen" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="210dp"
-            android:layout_height="197dp"
-            android:layout_alignBottom="@+id/top_half_circle"
+            android:id="@+id/logo"
+            android:layout_width="198dp"
+            android:layout_height="170dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="100dp"
             android:layout_marginTop="-20dp"
             android:layout_marginEnd="100dp"
-            android:layout_marginBottom="62dp"
             app:srcCompat="@mipmap/fitmate_logo_foreground" />
 
         <ImageView

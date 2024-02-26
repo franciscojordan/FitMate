@@ -8,12 +8,15 @@
 
     <ImageView
         android:id="@+id/top_half_circle4"
-        android:layout_width="413dp"
-        android:layout_height="237dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/top_halfcircle"
-        tools:layout_editor_absoluteY="-82dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_halfcircle" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -24,7 +27,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.41"
+        app:layout_constraintVertical_bias="0.273"
         app:srcCompat="@drawable/libreta" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -36,9 +39,10 @@
         android:rotation="270"
         app:layout_constraintBottom_toBottomOf="@+id/top_half_circle4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.785" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/form"

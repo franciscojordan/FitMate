@@ -3,6 +3,8 @@
     <string name="fitmate">FITMATE</string>
     <string name="registrarse">Registrarse</string>
     <string name="edad">Edad</string>
+    <string name="contrasenya">Contraseña</string>
+    <string name="nombre">Nombre</string>
     <string name="hecho">HECHO</string>
     <string name="iniciarsesion">Iniciar Sesión</string>
     <string name="guest">Ingresar como invitado</string>
@@ -24,5 +26,7 @@
     <string name="genero">Género</string>
     <string name="actividad">Nivel de actividad</string>
     <string name="historialescaneos">Historial de escaneos</string>
+
+
 
 </resources>

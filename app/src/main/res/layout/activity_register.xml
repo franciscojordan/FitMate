@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,40 +9,36 @@
     <ImageView
         android:id="@+id/top_half_circle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:src="@drawable/top_halfcircle"
-        app:tint="@color/darkGreen"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/top_halfcircle"
+        app:tint="@color/darkGreen" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="210dp"
-        android:layout_height="197dp"
+        android:layout_width="198dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
         android:layout_marginTop="-20dp"
-        android:layout_marginEnd="100dp" />
-
-    <TextView
-        android:id="@+id/fitmate_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="15dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="FITMATE" />
+        app:srcCompat="@mipmap/fitmate_logo_foreground" />
 
     <LinearLayout
         android:id="@+id/box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/top_box2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/box"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bot_half_circle"
-        tools:layout_editor_absoluteX="20dp">
+        android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username"
@@ -67,9 +63,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="60dp"
             android:background="@color/white"
-            android:hint="Contraseña">
+            android:hint="@string/contrasenya">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -77,48 +72,87 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/swapLoginButton"
-            android:layout_width="51dp"
-            android:layout_height="62dp"
-            android:layout_marginLeft="-150dp"
-            android:layout_marginTop="-60dp"
-            android:background="@mipmap/back_foreground" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="70dp"
+            android:background="@color/white"
+            android:hint="@string/edad">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/top_box2"
+        android:layout_width="220dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="96dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/top_clipboard" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/top_box2"
+        android:layout_alignTop="@+id/top_box2"
+        android:layout_alignEnd="@+id/top_box2"
+        android:layout_alignBottom="@+id/top_box2"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="@string/registrarse" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/done"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/box"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="100dp"
         android:height="75dp"
         android:background="@drawable/done_button"
         android:padding="10dp"
         android:text="@string/hecho"
-        android:textColor="@color/white"
-        />
-    <ImageView
-        android:id="@+id/top_box2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="-50dp" />
+        android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/Registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginBottom="-115dp"
-        android:text="@string/registrarse" />
     <ImageView
         android:id="@+id/bot_half_circle"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@drawable/half_circle_bot"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_height="109dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/half_circle_bot" />
+
+    <TextView
+        android:id="@+id/fitmate_title"
+        style="@style/greenLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/fitmate" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
