@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/small_box">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="¿Qué son los macros? Son los tres grupos principales de nutrientes: proteínas, carbohidratos y grasas. Nuestra herramienta te ayuda a establecer objetivos personalizados para cada uno de estos nutrientes, basados en tu perfil y metas. Simplemente ingresa tus datos y preferencias"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="0dp"/>
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_close"/>
+
+</LinearLayout>

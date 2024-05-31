@@ -19,6 +19,18 @@
         app:srcCompat="@drawable/top_halfcircle"
         tools:ignore="MissingConstraints" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/configButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"
+        android:background="@drawable/settings" />
+
     <ImageView
         android:id="@+id/pfp"
         android:layout_width="wrap_content"
@@ -145,18 +157,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.19999999" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/configButton"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toEndOf="@+id/username"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        android:background="@drawable/settings" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
