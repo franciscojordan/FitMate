@@ -2,6 +2,7 @@
     <string name="app_name">FitMate</string>
     <string name="fitmate">FITMATE</string>
     <string name="registrarse">Registrarse</string>
+    <string name="correo">Correo Electronico</string>
     <string name="edad">Edad</string>
     <string name="contrasenya">Contraseña</string>
     <string name="nombre">Nombre</string>
@@ -14,6 +15,7 @@
     <string name="usernameInvitado">Invitado</string>
     <string name="pasosInt">0</string>
     <string name="pasosString">Pasos\ntotales</string>
+    <string name="settings">Ajustes</string>
     <string name="distanciaInt">0</string>
     <string name="distanciaString">Distancia\nrecorrida</string>
     <string name="tiempoInt">0</string>

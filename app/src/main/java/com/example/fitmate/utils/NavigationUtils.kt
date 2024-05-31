@@ -13,22 +13,29 @@ import com.example.fitmate.RecetasScreen
 import com.example.fitmate.RegisterScreen
 import com.example.fitmate.ScannedScreen
 import com.example.fitmate.ScanningScreen
+import com.example.fitmate.SettingsScreen
 
 object NavigationUtils {
 
-    fun start(b: Bundle? = null, c: Context, s: Class<*>){
+    fun start(b: Bundle? = null, c: Context, s: Class<*>, finishCurrent: Boolean = false){
         val i = Intent(c, s)
         if (b != null) {
             i.putExtras(b)
         }
-        c.startActivity(i)
+        if (c is AppCompatActivity && finishCurrent) {
+            c.startActivity(i)
+            c.finish()
+        } else {
+            c.startActivity(i)
+        }
     }
+
     fun launchScanner(c: Context, b: Bundle? = null) {
-        start(b, c, ScanningScreen::class.java)
+        start(b, c, ScanningScreen::class.java, true)
     }
 
     fun launchCalculator(c: Context, b: Bundle? = null) {
-        start(b, c, CalculadoraScreen::class.java)
+        start(b, c, CalculadoraScreen::class.java, true)
     }
 
     fun launchEjercicios(c: Context, b: Bundle? = null) {
@@ -44,7 +51,7 @@ object NavigationUtils {
     }
 
     fun launchHome(c: Context, b: Bundle? = null) {
-        start(b, c, HomeScreen::class.java)
+        start(b, c, HomeScreen::class.java, true)
     }
 
     fun launchLogin(c: Context, b: Bundle? = null) {
@@ -67,7 +74,12 @@ object NavigationUtils {
         start(b, c, PreLoginScreen::class.java)
     }
 
+    fun launchSettings(c: Context, b: Bundle? = null) {
+        start(b, c, SettingsScreen::class.java)
+    }
+
     fun goBack(activity: AppCompatActivity) {
         activity.finish()
     }
+
 }
